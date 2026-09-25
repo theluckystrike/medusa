@@ -1,5 +1,16 @@
 # @medusajs/search
 
+## 2.21.2
+
+### Patch Changes
+
+- [#16928](https://github.com/medusajs/medusa/pull/16928) [`494745b8e6b63024e1b7741fe95caa4d03b464b0`](https://github.com/medusajs/medusa/commit/494745b8e6b63024e1b7741fe95caa4d03b464b0) Thanks [@sradevski](https://github.com/sradevski)! - fix(search): count distinct values instead of documents for deduplicated Medusa Cloud searches, and reject deduplicating by an unknown or array field
+
+- [#16930](https://github.com/medusajs/medusa/pull/16930) [`08f73ec78e17a3a5b6db112290e28f8b3ed79ef6`](https://github.com/medusajs/medusa/commit/08f73ec78e17a3a5b6db112290e28f8b3ed79ef6) Thanks [@sradevski](https://github.com/sradevski)! - fix(search): stop search index versions from piling up. A reindex drops the versions earlier failed or interrupted rebuilds left above the active one, and a swap drops every version below the new active one except its predecessor, instead of leaving them until the next build
+
+- Updated dependencies []:
+  - @medusajs/framework@2.21.2
+
 ## 2.21.1
 
 ### Patch Changes
